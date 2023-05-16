@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaproject.administrateurController">
+   <children>
+      <ImageView fitHeight="483.0" fitWidth="856.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/LoginAdmin.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="79.0" layoutY="235.0" prefHeight="139.0" prefWidth="188.0" spacing="23.0">
+         <children>
+            <TextField fx:id="IDadmin" opacity="0.61" prefHeight="31.0" prefWidth="180.0" />
+            <PasswordField fx:id="passwordAdmin" onAction="#handleOnAction" prefHeight="37.0" prefWidth="188.0" />
+         </children>
+      </VBox>
+      <Button fx:id="btnlogin" layoutX="75.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleOnAction" opacity="0.0" prefHeight="39.0" prefWidth="199.0" text="login" textFill="#ffffffdb" />
+      <Button fx:id="backbtn" layoutX="20.0" layoutY="422.0" minWidth="53.0" mnemonicParsing="false" onAction="#gobackAction" opacity="0.0" prefHeight="39.0" prefWidth="53.0" />
+      <Pane prefHeight="161.0" prefWidth="841.0" style="-fx-background-color: #ffffff;" />
+      <Pane layoutX="297.0" layoutY="141.0" prefHeight="341.0" prefWidth="546.0" style="-fx-background-color: #ffffff;" />
+   </children>
+</AnchorPane>

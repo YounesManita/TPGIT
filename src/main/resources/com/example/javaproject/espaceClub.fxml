@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="477.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaproject.clubController">
+   <children>
+      <ImageView fitHeight="483.0" fitWidth="849.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/gestClub.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableclub" layoutX="327.0" layoutY="104.0" onMouseClicked="#handleMouseAction" prefHeight="284.0" prefWidth="481.0">
+        <columns>
+          <TableColumn fx:id="Idcol" prefWidth="46.000030517578125" text="ID" />
+          <TableColumn fx:id="Nomcol" prefWidth="107.33331298828125" text="Nom" />
+            <TableColumn fx:id="catcol" prefWidth="104.0" text="Categorie" />
+            <TableColumn fx:id="nbrmembrecol" prefWidth="122.0" text="Nombre membre" />
+            <TableColumn fx:id="cotisationcol" prefWidth="100.00002034505206" text="Cotisation" />
+        </columns>
+      </TableView>
+      <VBox layoutX="54.0" layoutY="131.0" prefHeight="236.0" prefWidth="230.0" spacing="30.0">
+         <children>
+            <TextField fx:id="Idtf" opacity="0.4" prefHeight="33.0" prefWidth="230.0" />
+            <TextField fx:id="nomtf" opacity="0.4" prefHeight="32.0" prefWidth="230.0" />
+            <TextField fx:id="cattf" opacity="0.4" prefHeight="33.0" prefWidth="230.0" />
+            <TextField fx:id="cottf" opacity="0.4" prefHeight="34.0" prefWidth="230.0" />
+         </children>
+      </VBox>
+      <Button fx:id="ajouterbtn" layoutX="71.0" layoutY="388.0" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.0" prefHeight="44.0" prefWidth="72.0" text="Button" />
+      <Button fx:id="modifierbtn" layoutX="184.0" layoutY="388.0" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.0" prefHeight="44.0" prefWidth="72.0" text="Button" />
+      <Button fx:id="supprimerbtn" layoutX="696.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.0" prefHeight="34.0" prefWidth="111.0" text="Button" />
+      <Pane layoutY="1.0" prefHeight="90.0" prefWidth="841.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="backbtn" layoutX="790.0" layoutY="26.0" mnemonicParsing="false" onAction="#gobackOnAction" opacity="0.0" prefHeight="34.0" prefWidth="48.0" text="Button" textFill="#d71717" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
